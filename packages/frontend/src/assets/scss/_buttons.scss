@@ -1,0 +1,95 @@
+a.btn,
+button.btn {
+	background: white;
+	color: $black;
+	border: none;
+	font-size: 0.95rem;
+	padding: 0.75em .7em;
+	cursor: pointer;
+	font-family: 'lato', sans-serif;
+	text-decoration: none;
+	letter-spacing: 0.12em;
+	font-weight: 900;
+	transition: all 0.3s ease-in-out;
+	display: inline-block;
+	border:1px solid white;
+	&:hover {
+		background: $light-gray;
+	}
+	&:focus {
+		outline: none;
+	}
+	&.btn-sm {
+    	padding: 0.5em 2em;
+	}
+	&[disabled] {
+		cursor: not-allowed;
+		opacity: 0.6;
+	}
+}
+a.btn.btn-block,
+button.btn.btn-block{
+	width: 100%;
+	display: block;
+}
+a.btn.btn-primary,
+button.btn.btn-primary {
+	background: $primary;
+	color: white;
+	border:1px solid $primary;
+	&:hover {
+		background: #ffffff;
+		border:1px solid $primary;
+		color: $primary;
+	}
+}
+a.btn.btn-primary-black,
+button.btn.btn-primary-black {
+	background: $primary;
+	color: $black;
+	border:1px solid $primary;
+	&:hover {
+		background: $primary-dark;
+		border:1px solid $primary-dark;
+	}
+}
+a.btn.btn-primary-outline,
+button.btn.btn-primary-outline {
+	border:1px solid $primary;
+	background: transparent;
+	color: $primary;
+	&:hover {
+		background: $primary;
+		color: white;
+	}
+}
+a.btn.btn-outline,
+button.btn.btn-outline {
+	border:1px solid $black;
+	background: white;
+	color: $black;
+	&:hover {
+		background: $black;
+		color: white;
+	}
+}
+a.btn.btn-white-outline,
+button.btn.btn-white-outline {
+	border:1px solid white;
+	background: $primary;
+	color: $black;
+	&:hover {
+		background: white;
+		color: $black;
+	}
+}
+a.btn.btn-outline-inverted,
+button.btn.btn-outline-inverted {
+	border:1px solid white;
+	background: $black;
+	color: white;
+	&:hover {
+		background: white;
+		color: $black;
+	}
+}

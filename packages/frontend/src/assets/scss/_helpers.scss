@@ -1,0 +1,90 @@
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.clear {
+  clear: both;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.full-width {
+  width: 100%;
+  display: block;
+}
+.pos-r {
+  position: relative;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.text-center {
+  text-align: center;
+}
+.text-center-xs {
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+	text-align: left;
+}
+.text-white {
+	color: white;
+}
+.text-primary {
+  color: $primary;
+}
+.text-dark-gray {
+  color: $dark-gray;
+}
+@media screen and (max-width: 768px) {
+  .text-black-xs {
+    color: $black;
+  }
+}
+.text-gray {
+  color: $gray;
+}
+.text-light-gray {
+  color: $light-gray;
+}
+.white {
+  background:white;
+}
+.black {
+  background:$black;
+}
+.light-gray {
+  background:$light-gray;
+}
+.primary {
+  background: $primary;
+}
+.weight-100 {
+  font-weight: 100;
+}
+.white-space-pre-line {
+  white-space: pre-line;
+}

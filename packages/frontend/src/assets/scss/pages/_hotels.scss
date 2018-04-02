@@ -1,0 +1,142 @@
+//:: Filters
+.title-toggle {
+	color: $primary-dark;
+	position: relative;
+	font-family: 'lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+	cursor: pointer;
+	&::after {
+		content: "";
+	  height: 0;
+	  border-left: 8px solid transparent;
+	  border-right: 8px solid transparent;
+	  border-bottom: 8px solid $primary-dark;
+		position: absolute;
+		width: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+}
+.search-form {
+	.form-group {
+		width: calc(100% - 106px);
+		float: left;
+	}
+}
+
+//:: Item hotel
+.item-content {
+	background: white;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+	.image-content {
+		float: left;
+		padding-bottom: 19.25%;
+		position: relative;
+		max-width: 100%;
+		width: 30%;
+		@media screen and (max-width: 768px) {
+			padding-bottom: 65.25%;
+			width: 100%;
+		}
+		&::after {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: #f5f5f5;
+			background-size: 100px;
+			background-repeat: no-repeat;
+			background-position: center;
+			content: "";
+			z-index: 0;
+		}
+		.image {
+			background-position: center center;
+			background-size: cover;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 2;
+		}
+	}
+	.caption {
+		float: left;
+		padding: .5rem 1rem;
+		width: 50%;
+		@media screen and (max-width: 1366px) {
+			width: 42%;
+		}
+		@media screen and (max-width: 768px) {
+			padding: .5rem 0;
+			width: 100%;
+		}
+		.title{
+			font-family: 'lato', sans-serif;
+			font-size: 1.2rem;
+			font-weight: 700;
+			color: $primary-dark;
+			letter-spacing: 0rem;
+			margin-bottom: 6px;
+			@media screen and (max-width: 768px) {
+				font-size: 1.2rem;
+			}
+		}
+	}
+	.details {
+		border-left: 1px dashed $gray;
+		float: left;
+		padding: 4% 2.5rem;
+		text-align: center;
+		width: 20%;
+		@media screen and (max-width: 1366px) {
+			padding: 1.2% 2.5rem;
+			width: 28%;
+		}
+		@media screen and (max-width: 768px) {
+			border: none;
+			border-top: 1px dashed $gray;
+			padding: 5% 0;
+			margin-top: 10px;
+			width: 100%;
+		}
+		.price {
+			color: $alpha;
+			font-family: 'lato', sans-serif;
+			font-size: 2.1rem;
+			font-weight: 900;
+			.currency {
+				font-family: 'lato', sans-serif;
+				font-weight: 400;
+				font-size: 1.4rem;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+
+.title-beta {
+	position: relative;
+	&::after{
+		content: "";
+		background: #6B6B6B;
+		width: 113px;
+		height: 6px;
+		position: absolute;
+		left: 0;
+		bottom: -24px;
+		z-index: 1;
+	}
+}
+.description {
+	p {
+		line-height: 28px;
+	}
+}

@@ -1,0 +1,16 @@
+
+.panel {
+	height: 100vh;
+	min-height: 300px;
+	width: 100%;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	@media screen and (max-width: 768px) {
+		position: relative;
+		height: auto;
+		min-height: 100vh;
+	}
+}

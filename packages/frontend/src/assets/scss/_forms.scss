@@ -1,0 +1,62 @@
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+textarea{
+		width: 100%;
+    border: none;
+    color: $black;
+    padding: 0.65rem 1rem;
+    font-weight: 400;
+		font-family: 'lato', sans-serif;
+	&:focus {
+    	outline: none;
+			border-color: $primary;
+	}
+}
+.form-control[type="text"],
+.form-control[type="password"],
+.form-control[type="email"],
+textarea.form-control {
+	background: #ffffff;
+	box-shadow: -1px 2px 6px 0 rgba(0,0,0,0.18);
+	border: 1px solid #ffffff;
+	max-width: 100%;
+}
+
+.form-control--dark[type="text"],
+.form-control--dark[type="password"],
+.form-control--dark[type="email"],
+textarea.form-control--dark {
+	background: #3d3d3d;
+	color: white;
+	::-webkit-input-placeholder {
+	  color: #959595;
+	}
+	::-moz-placeholder {
+	  color: #959595;
+	}
+	:-ms-input-placeholder {
+	  color: #959595;
+	}
+	:-moz-placeholder {
+	  color: #959595;
+	}
+}
+
+fieldset {
+	color: $black;
+	border: none;
+	font-family: 'lato', sans-serif;
+	font-weight: 300;
+	padding: 0;
+	legend {
+		font-size: 1.3rem;
+	}
+}
+label {
+	font-weight: 300;
+	color: $black;
+	font-family: 'lato', sans-serif;
+}

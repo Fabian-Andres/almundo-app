@@ -1,0 +1,7 @@
+/node_modules
+/packages/api-rest/node_modules
+/packages/front/node_modules
+.DS_Store
+lerna-debug.log
+yarn.lock
+package-lock.json
