@@ -1,7 +1,7 @@
 /node_modules
 /packages/api-rest/node_modules
 /packages/front/node_modules
-/Applications/proyects/almundo-app/packages/frontend/src/assets/scss/main.css
+/packages/frontend/src/assets/scss/main.css
 .DS_Store
 lerna-debug.log
 yarn.lock
